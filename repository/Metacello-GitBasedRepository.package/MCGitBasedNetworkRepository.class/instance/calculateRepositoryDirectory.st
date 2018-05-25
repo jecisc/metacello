@@ -2,9 +2,9 @@ private
 calculateRepositoryDirectory
 	 | directory |
 	
-	directory := [ self class
+	directory := self class
 		projectDirectoryFrom: self projectPath
-		version: self projectVersion ] on: MetacelloScriptGitBasedDownloadNotification do: [ :ex | ex resume ].
+		version: self projectVersion.
 	self repoPath isEmpty ifFalse: [
 		directory := MetacelloPlatform current
 			directoryFromPath: self repoPath
