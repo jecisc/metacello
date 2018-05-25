@@ -14,10 +14,10 @@ projectDirectoryFrom: projectPath version: versionString
 				directoryFromPath: cachePath
 				relativeTo: theCacheDirectory) exists not ])
 		ifTrue: [ | url archive directory zipFileName |
-			MetacelloScriptGitBasedDownloadNotification new
+			"MetacelloScriptGitBasedDownloadNotification new
 				projectPath: projectPath;
 				versionString: versionString;
-				signal.	"for testing purposes"
+				signal."	"for testing purposes"
 			mcPlatform ensureDirectoryExists: theCacheDirectory.
 			url := self
 				projectZipUrlFor: projectPath
