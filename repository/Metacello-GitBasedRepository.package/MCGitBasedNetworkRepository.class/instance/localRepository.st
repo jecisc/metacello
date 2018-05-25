@@ -1,5 +1,5 @@
 private
 localRepository
-	localRepository ifNil: [ [ self resolveLocalRespository  ] on: MetacelloScriptGitBasedDownloadNotification do: [ :ex | ex resume ]. ].
+	localRepository ifNil: [ self resolveLocalRespository ].
 	self validateLocalRepository.
 	^ localRepository
