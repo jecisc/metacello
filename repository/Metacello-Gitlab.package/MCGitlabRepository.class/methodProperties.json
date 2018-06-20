@@ -1,9 +1,10 @@
 {
 	"instance" : { },
 	"class" : {
+		"createRepositoryFromSpec:on:" : "CyrilFerlicot 6/20/2018 13:07",
 		"isEnabled" : "",
+		"cacheDirectoryPath" : "",
 		"basicDescription" : "",
-		"projectTagsUrlFor:" : "",
-		"cacheDirectoryPath" : ""
+		"projectTagsUrlFor:" : ""
 	}
 }
