@@ -1,3 +1,3 @@
 testing
 isAvailableFor: type
-	^ type = self basicDescription
+	^ self isEnabled and: [ type = self basicDescription ]
