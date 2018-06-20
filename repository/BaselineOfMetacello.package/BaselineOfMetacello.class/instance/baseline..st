@@ -21,7 +21,7 @@ baseline: spec
           with: [ spec requires: #('Metacello-MC' 'Metacello-FileTree') ];
         package: 'Metacello-GitHub'
           with: [ spec requires: #('Metacello-GitBasedRepository') ];
-        package: 'Metacello-GitLab'
+        package: 'Metacello-Gitlab'
           with: [ spec requires: #('Metacello-GitBasedRepository') ];
         package: 'Metacello-Bitbucket'
           with: [ spec requires: #('Metacello-GitBasedRepository') ];
@@ -47,7 +47,7 @@ baseline: spec
                 requires:
                   #('Metacello-Core' 'Metacello-TestsCore' 'Metacello-ToolBox' 'Metacello-TestsMCResources') ];
         package: 'Metacello-TestsMC'
-          with: [ spec requires: #('Metacello-MC' 'Metacello-ToolBox' 'Metacello-GitHub' 'Metacello-GitLab' 'Metacello-Bitbucket' 'Metacello-TestsMCResources') ];
+          with: [ spec requires: #('Metacello-MC' 'Metacello-ToolBox' 'Metacello-GitHub' 'Metacello-Gitlab' 'Metacello-Bitbucket' 'Metacello-TestsMCResources') ];
         package: 'Metacello-TestsMCA'
           with: [ spec requires: #('Metacello-TestsMC') ];
         package: 'Metacello-TestsMCB'
@@ -68,7 +68,7 @@ baseline: spec
         group: 'default' with: #('batch' 'Metacello-ToolBox');
         group: 'batch'
           with:
-            #('Metacello-Core' 'Metacello-GitHub' 'Metacello-GitLab' 'Metacello-Bitbucket' 'Cypress');
+            #('Metacello-Core' 'Metacello-GitHub' 'Metacello-Gitlab' 'Metacello-Bitbucket' 'Cypress');
         group: 'Base Configuration' with: #('Metacello-Base');
         group: 'Core' with: #('default');
         group: 'Cypress' with: #('Metacello-Cypress');
@@ -233,7 +233,7 @@ baseline: spec
         package: 'Metacello-MC'
           with: [ spec requires: #('Metacello-Core') ];
         package: 'Metacello-TestsMC'
-          with: [ spec requires: #('Metacello-MC' 'Metacello-ToolBox' 'Metacello-GitHub' 'Metacello-GitLab' 'Metacello-Bitbucket' 'Metacello-TestsMCResources') ];
+          with: [ spec requires: #('Metacello-MC' 'Metacello-ToolBox' 'Metacello-GitHub' 'Metacello-Gitlab' 'Metacello-Bitbucket' 'Metacello-TestsMCResources') ];
         package: 'Metacello-PharoCommonPlatform'
           with: [ spec requires: #('Metacello-MC') ];
         package: 'Metacello-Platform'
