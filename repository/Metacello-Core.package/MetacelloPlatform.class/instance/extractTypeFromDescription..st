@@ -12,6 +12,8 @@ extractTypeFromDescription: description
     ifTrue: [ ^ 'tonel' ].
   (description beginsWith: 'github://')
     ifTrue: [ ^ 'github' ].
+  (description beginsWith: 'gitlab://')
+    ifTrue: [ ^ 'gitlab' ].
   (description beginsWith: 'gitorious://')
     ifTrue: [ ^ 'gitorious' ].
   (description beginsWith: 'bitbucket://')
